@@ -15,6 +15,6 @@ function formatAs12HourClock(time) {
   }
   return `${time}am`;
 }
-console.log(formatAs12HourClock("13:00"));
+console.log(formatAs12HourClock("14:00"));
 
-export { formatAs12HourClock };
+export { formatAs12HourClock }; 
