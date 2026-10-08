@@ -14,19 +14,19 @@ test("Classifies right angles", () => {
 test("Classifies acute angles", () =>{
   const acute = getAngleType(45);
   assert.equal(acute, "Acute angle")
-})
+});
 
 test("Classifies obtuse angle", () => {
   const obtuse = getAngleType(140);
   assert.equal(obtuse, "Obtuse angle")
-})
+});
 
 test("Classifies straight angle", () => {
   const straight = getAngleType(180);
   assert.equal(straight, "Straight angle")
-})
+});
 
 test("Classifies reflex angle", () => {
   const reflex = getAngleType(250)
-  assert.equal(reflex, "Reflex angle")
-})
+  assert.equal(reflex, "Reflex angle");
+});
