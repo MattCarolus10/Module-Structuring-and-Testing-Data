@@ -20,5 +20,8 @@ export function isProperFraction(numerator, denominator) {
   if (numerator > denominator){
     return false
   }
-  
+  if (-numerator < denominator){
+    return true
+  }
 }
+ console.log(isProperFraction(-2, 1))
