@@ -16,6 +16,8 @@
 // After you have implemented the function, write tests to cover all the cases, and
 // execute the code to ensure all tests pass.
 
-export function getAngleType(angle) {
-  // TODO: Implement this function
+export function getAngleType(angle){
+  if (angle === 90){
+    return "Right angle"
+  }
 }
