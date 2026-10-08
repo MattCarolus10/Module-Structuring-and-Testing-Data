@@ -9,4 +9,5 @@ import { isProperFraction } from "../implement/2-is-proper-fraction.js";
 test("Basic proper fraction", () => {
 
   assert.equal(isProperFraction(1, 2), true);
+  assert.equal(isProperFraction(2, 1), false)
 });
