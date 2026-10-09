@@ -18,8 +18,8 @@ test("Face cards returns 10", () => {
   assert.equal(getCardValue("Q♦"), 10);
   assert.equal(getCardValue("K♥"), 10);
 });
-// test("Arbitrary non-card string", () => {
-//   assert.throws(() => getCardValue("invalid"), /Expected a number followed by a suit, but got "invalid"/, "Expected clear error");
-// });
+test("Arbitrary non-card string", () => {
+  assert.throws(() => getCardValue("invalid"), /Expected a number followed by a suit, but got "invalid"/, "Expected clear error");
+});
 
 // TODO: What other invalid card cases can you think of?
