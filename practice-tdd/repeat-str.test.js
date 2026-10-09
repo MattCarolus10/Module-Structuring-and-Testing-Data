@@ -23,6 +23,13 @@ test("should repeat the string one time", () => {
   expect(repeatedStr).toEqual("hello");
 });
 
+test("should return an empty string", () => {
+  const str = "hello";
+  const count = 0;
+  const repeatedStr = repeatStr(str, count);
+  expect(repeatedStr).toEqual("");
+});
+
 
 
 // Case: handle count of 1:
