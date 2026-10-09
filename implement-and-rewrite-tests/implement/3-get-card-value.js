@@ -27,7 +27,10 @@ export function getCardValue(card) {
   const suit = card.slice(-1);
   const rank = card.slice(0, -1);
   if (rank === "A"){
-    return 11
-  }
-  return Number(rank)
-}
+    return 11;
+  };
+  if (rank === "J" || rank === "Q" || rank === "K"){
+    return 10;
+  };
+  return Number(rank);
+};
