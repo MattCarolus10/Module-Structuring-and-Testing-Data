@@ -19,3 +19,6 @@ test(`Should return true when numerator is zero`, ()=> {
   expect(isProperFraction(0, 4)).toEqual(true);
 });
 
+test(`Should return false when numerator === denominator`, () => {
+  expect(isProperFraction(5, 5)).toEqual(false);
+});
