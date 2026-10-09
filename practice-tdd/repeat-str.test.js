@@ -30,7 +30,11 @@ test("should return an empty string", () => {
   expect(repeatedStr).toEqual("");
 });
 
-
+test("should return invalid when a negative integer is passed", () => {
+  const str = "hello";
+  const count = -2;
+  expect(() => repeatStr(str, count)).toThrow();
+});
 
 // Case: handle count of 1:
 // Given a target string `str` and a `count` equal to 1,
