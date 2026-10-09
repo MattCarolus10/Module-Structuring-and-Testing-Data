@@ -17,7 +17,10 @@ test(`Should return 2 to 10 when given Number card`, () => {
   expect(getCardValue("2♣")).toEqual(2);
   expect(getCardValue("5♥")).toEqual(5);
   expect(getCardValue("8♠")).toEqual(8);
-})
+});
+
+
+
 
 
 
