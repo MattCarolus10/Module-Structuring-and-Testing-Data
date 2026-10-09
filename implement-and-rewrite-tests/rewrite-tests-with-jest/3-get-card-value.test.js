@@ -24,16 +24,10 @@ test(`Should throw error when given invalid card`, () => {
   expect(() => getCardValue("1♥1")).toThrow();
   expect(() => getCardValue("b♣")).toThrow();
   expect(() => getCardValue("k♦j")).toThrow();
+  expect(() => getCardValue("")).toThrow();
+  expect(() => getCardValue("9")).toThrow();
+  expect(() => getCardValue("-8♦")).toThrow();
 });
-
-
-
-
-
-
-
-
-
 
 
 // Suggestion: Group the remaining test data into these categories:
