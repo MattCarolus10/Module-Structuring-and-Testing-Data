@@ -5,9 +5,9 @@ import { getCardValue } from "../implement/3-get-card-value.js";
 
 // TODO: Write tests to cover all outcomes, including throwing errors for invalid cards.
 
-// test("Valid single-digit card", () => {
-//   assert.equal(getCardValue("9♠"), 9);
-// });
+test("Valid single-digit card", () => {
+  assert.equal(getCardValue("9♠"), 9);
+});
 
 test("Ace card returns 11", () => {
   assert.equal(getCardValue("A♠"), 11);
