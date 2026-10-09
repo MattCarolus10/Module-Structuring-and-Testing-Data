@@ -49,8 +49,8 @@ test("Two digit rank", () => {
   assert.equal(getCardValue("10♦"), 10);
 });
 
-test("Adding junks with extra character", ()=> {
-  assert.throws(getCardValue("9♦y"), /Expected/
+test("Adding junks with extra character", () => {
+  () => assert.throws(getCardValue("9♦y"), /Expected/
 );
 });
 
