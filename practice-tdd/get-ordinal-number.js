@@ -9,10 +9,10 @@ export function getOrdinalNumber(num) {
     return `${num}st`;
   }
   if (lastDigit === 2) {
-    return "2nd";
+    return `${num}nd`;
   }
   if (lastDigit === 3) {
-    return "3rd";
+    return `${num}rd`;
   }
   return `${num}th`;
 }
