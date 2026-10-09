@@ -37,9 +37,3 @@ test(`Should return "Invalid angle when (angle < 0 and angle > 360)`, () => {
   expect(getAngleType(0)).toEqual("Invalid angle");
   expect(getAngleType(360)).toEqual("Invalid angle");
 });
-
-// Case 2: Right angle
-// Case 3: Obtuse angles
-// Case 4: Straight angle
-// Case 5: Reflex angles
-// Case 6: Invalid angles
