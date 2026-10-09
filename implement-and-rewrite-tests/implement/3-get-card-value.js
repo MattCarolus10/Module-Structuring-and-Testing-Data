@@ -1,6 +1,6 @@
 export function getCardValue(card) {
   const suit = card.slice(-1);
-  const rank = card.slice(0, -1);
+  const rank = card.slice(0, -1).toUpperCase();
 
   const validSuit = ["♠", "♥", "♦", "♣"];
   const validRank = [
@@ -30,3 +30,5 @@ export function getCardValue(card) {
   }
   return Number(rank);
 }
+
+
