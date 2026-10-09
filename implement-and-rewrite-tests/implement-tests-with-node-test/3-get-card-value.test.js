@@ -23,3 +23,31 @@ test("Arbitrary non-card string", () => {
     "Expected clear error"
   );
 });
+
+test("Negative values string", () => {
+  assert.throws(
+    () => getCardValue("invalid"), /Expected a number followed by a suit, but got "invalid"/,
+    "Expected clear error"
+  );
+});
+
+test("Lowercase ranks", () => {
+  assert.equal(getCardValue("a♦"), 11);
+  assert.equal(getCardValue("j♦"), 10);
+});
+
+test("Missing or broken suit", () => {
+  assert.throws(
+    () => getCardValue("9"), /Expected/
+  );
+  assert.throws(
+    () => getValues(""), /Expected/
+  );
+});
+
+test("Two digit rank", () => {
+  assert.equal(getCardValue("10♦"), 10);
+});
+
+
+
