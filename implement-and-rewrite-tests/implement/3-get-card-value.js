@@ -41,3 +41,4 @@ export function getCardValue(card) {
   };
   return Number(rank);
 };
+
