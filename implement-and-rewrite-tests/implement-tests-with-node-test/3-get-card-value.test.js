@@ -52,5 +52,5 @@ test("Two digit rank", () => {
 test("Adding junks with extra character", () => {
   () => assert.throws(getCardValue("9♦y"), /Expected/
 );
-});
+);
 
