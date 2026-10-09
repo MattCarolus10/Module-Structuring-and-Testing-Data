@@ -2,7 +2,7 @@ export function getOrdinalNumber(num) {
   const lastDigit = num % 10;
   const lastTwoDigits = num % 100;
 
-  if (lastTwoDigit >= 11 && lastTwoDigits <= 13) {
+  if (lastTwoDigits >= 11 && lastTwoDigits <= 13) {
     return `${num}th`;
   }
   if (lastDigit === 1) {
@@ -14,8 +14,9 @@ export function getOrdinalNumber(num) {
   if (lastDigit === 3) {
     return "3rd";
   }
+  return `${num}th`;
 
 }
-console.log(getOrdinalNumber(10))
+console.log(getOrdinalNumber(100))
 
   
