@@ -38,10 +38,10 @@ test("Lowercase ranks", () => {
 
 test("Missing or broken suit", () => {
   assert.throws(
-    () => getCardValue("9"), /Expected/
+    () => (getCardValue("9")), /Expected/
   );
   assert.throws(
-    () => getValues(""), /Expected/
+    () => (getCardValue("")), /Expected/
   );
 });
 
