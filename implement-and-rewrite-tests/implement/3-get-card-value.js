@@ -24,5 +24,9 @@
 // execute the code to ensure all tests pass.
 
 export function getCardValue(card) {
-  // TODO: Implement this function
+  const suit = card.slice(-1);
+  const rank = card.slice(0, -1);
+  if (rank === "A"){
+    return 11
+  }
 }
