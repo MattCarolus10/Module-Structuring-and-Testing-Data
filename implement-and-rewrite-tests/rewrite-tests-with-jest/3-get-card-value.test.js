@@ -19,6 +19,15 @@ test(`Should return 2 to 10 when given Number card`, () => {
   expect(getCardValue("8♠")).toEqual(8);
 });
 
+test(`Should throw error when given invalid card`, () => {
+  expect(() => getCardValue("x♣")).toThrow();
+  expect(() => getCardValue("1♥1")).toThrow();
+  expect(() => getCardValue("b♣")).toThrow();
+  expect(() => getCardValue("k♦j")).toThrow();
+});
+
+
+
 
 
 
