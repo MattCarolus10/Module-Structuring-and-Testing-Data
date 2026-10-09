@@ -6,7 +6,7 @@ export function getOrdinalNumber(num) {
     return `${num}th`;
   }
   if (lastDigit === 1) {
-    return "1st";
+    return `${num}st`;
   }
   if (lastDigit === 2) {
     return "2nd";
@@ -16,3 +16,4 @@ export function getOrdinalNumber(num) {
   }
   return `${num}th`;
 }
+console.log(getOrdinalNumber(21))
