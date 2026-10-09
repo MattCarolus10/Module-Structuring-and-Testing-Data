@@ -3,9 +3,6 @@ import test from "node:test";
 
 import { getAngleType } from "../implement/1-get-angle-type.js";
 
-// TODO: Write tests to cover all cases, including boundary and invalid cases.
-// Example: Identify Right Angles
-
 test("Classifies right angles", () => {
 
   const right = getAngleType(90);
