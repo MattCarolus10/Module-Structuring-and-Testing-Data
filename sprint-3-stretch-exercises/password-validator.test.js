@@ -47,3 +47,11 @@ test("Password has at least one special non-alphanumeric symbols", () => {
   const result = isValidPassword(password);
   expect(result).toEqual(true);
 });
+
+test("Password must not be a previous password", () => {
+    const password = "Ab12#";
+    const passwords = ["Ab12#"];
+    const result = isValidPassword(password, passwords);
+    expect(result).toEqual(false);
+});
+
