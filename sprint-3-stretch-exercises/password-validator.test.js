@@ -39,4 +39,11 @@ test("Password has at least one lowerCase letter", () => {
     expect(result).toEqual(true)
 });
 
+test("Password has at least one number 0 - 9", () => {
+
+    const password = "Ab123";
+    const result = isValidPassword(password);
+    expect(result).toEqual(true);
+});
+
 
