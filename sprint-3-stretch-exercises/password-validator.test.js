@@ -46,4 +46,9 @@ test("Password has at least one number 0 - 9", () => {
     expect(result).toEqual(true);
 });
 
+test("Password has at least one special non-alphanumeric symbols", () => {
 
+    const password = "Ab12#";
+    const result = isValidPassword(password);
+    expect(result).toEqual(true);
+});
