@@ -16,39 +16,34 @@ You must breakdown this problem in order to solve it. Find one test case first a
 */
 import { isValidPassword } from "./password-validator.js";
 test("password has at least 5 characters", () => {
-    // Arrange
-    const password = "12345";
-    // Act
-    const result = isValidPassword(password);
-    // Assert
-    expect(result).toEqual(true);
-}
-);
+  // Arrange
+  const password = "12345";
+  // Act
+  const result = isValidPassword(password);
+  // Assert
+  expect(result).toEqual(true);
+});
 
 test("Password has at least one upperCase letter", () => {
-
-    const password = "A1234";
-    const result = isValidPassword(password);
-    expect(result).toEqual(true);
+  const password = "A1234";
+  const result = isValidPassword(password);
+  expect(result).toEqual(true);
 });
 
 test("Password has at least one lowerCase letter", () => {
-
-    const password = "Ab123";
-    const result = isValidPassword(password);
-    expect(result).toEqual(true)
+  const password = "Ab123";
+  const result = isValidPassword(password);
+  expect(result).toEqual(true);
 });
 
 test("Password has at least one number 0 - 9", () => {
-
-    const password = "Ab123";
-    const result = isValidPassword(password);
-    expect(result).toEqual(true);
+  const password = "Ab123";
+  const result = isValidPassword(password);
+  expect(result).toEqual(true);
 });
 
 test("Password has at least one special non-alphanumeric symbols", () => {
-
-    const password = "Ab12#";
-    const result = isValidPassword(password);
-    expect(result).toEqual(true);
+  const password = "Ab12#";
+  const result = isValidPassword(password);
+  expect(result).toEqual(true);
 });
