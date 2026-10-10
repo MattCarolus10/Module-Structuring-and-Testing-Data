@@ -1,4 +1,4 @@
-export function isValidPassword(password, password = []) {
+export function isValidPassword(password, passwords = []) {
   if (password.includes(password)) {
     return false
   }
