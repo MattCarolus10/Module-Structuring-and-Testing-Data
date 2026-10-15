@@ -13,4 +13,4 @@ testName = "Aman";
 
 const greetingMessage = sayHello(greeting, testName);
 
-console.log(greetingMessage); // 'hello, Aman!'
+console.log(greetingMessage);
