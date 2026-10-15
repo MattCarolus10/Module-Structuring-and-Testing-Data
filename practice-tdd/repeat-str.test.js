@@ -26,3 +26,10 @@ test("should return invalid when a negative integer is passed", () => {
   const count = -2;
   expect(() => repeatStr(str, count)).toThrow();
 });
+
+test("should repeat a string made of special characters", () => {
+  const str = "@£$%&";
+  const count = 3;
+  const repeatedStr = repeatStr(str, count)
+  expect(repeatedStr).toEqual("@£$%&@£$%&@£$%&");
+});
