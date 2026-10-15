@@ -1,9 +1,8 @@
 const greeting = "hello";
 
 function sayHello(greeting, name) {
-
   return `${greeting}, ${name}!`;
-};
+}
 
 let testName = "Aman";
 
