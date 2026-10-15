@@ -21,6 +21,12 @@ test("Should return 0 when value does not exist in str", () => {
   expect(count).toEqual(0);
 });
 
+test("Should return 0 when string is empty", () => {
+  const str = "";
+  const char = "a";
+  const count = countChar(str, char);
+  expect(count).toEqual(0);
+});
 
 
 
