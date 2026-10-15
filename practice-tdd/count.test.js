@@ -8,8 +8,10 @@ test("should count multiple occurrences of a character", () => {
 });
 
 test("Should return 0 when value does not exist in str", () => {
-  const str = "zzzzz";
-  const char = "a";
+  const str = "again";
+  const char = "e";
   const count = countChar(str, char);
   expect(count).toEqual(0);
 });
+
+
