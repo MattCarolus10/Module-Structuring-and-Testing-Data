@@ -33,3 +33,10 @@ test("should repeat a string made of special characters", () => {
   const repeatedStr = repeatStr(str, count)
   expect(repeatedStr).toEqual("@£$%&@£$%&@£$%&");
 });
+
+test("should return an empty string when str is empty", () => {
+  const str = "";
+  const count = 3;
+  const repeatedStr = repeatStr(str, count)
+  expect(repeatedStr).toEqual("");
+});
